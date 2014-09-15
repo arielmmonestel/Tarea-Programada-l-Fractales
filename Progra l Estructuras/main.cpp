@@ -6,4 +6,8 @@ using namespace std;
 int main()
 {
 
+    initwindow (600,400);
+    getch();
+    closegraph();
+
 }
