@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-lbgi -lgdi32 -luser32" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-lbgi -lgdi32 -luser32" />
@@ -37,6 +38,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/LinkedList.h" />
+		<Unit filename="include/Nodo.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
