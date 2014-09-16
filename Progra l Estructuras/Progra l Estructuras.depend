@@ -1,5 +1,27 @@
 # depslib dependency file v1.0
-1410819622 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1410843677 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
+	<math.h>
+	"LinkedList.h"
+	"Constants.h"
+	"LevyCCurve.h"
+
+1410833813 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\linkedlist.h
+	<iostream>
+	<cstdlib>
+	<stdexcept>
+	"Nodo.h"
+	<conio.h>
+	<time.h>
+
+1410833631 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\nodo.h
+	<stdio.h>
+
+1410829708 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\constants.h
+
+1410833110 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+	"LinkedList.h"
+	"Nodo.h"
+	"Constants.h"
 

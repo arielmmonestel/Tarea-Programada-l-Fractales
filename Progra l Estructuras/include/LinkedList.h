@@ -5,12 +5,15 @@
 #include <cstdlib>
 #include <stdexcept>
 #include "Nodo.h"
+#include <conio.h>
+#include <time.h>
 
 using namespace std;
 
 template<typename E>
 
 class LinkedList{
+
 private:
     Node <E> * head;
     Node <E> * tail;
@@ -133,6 +136,7 @@ public:
     }
 
     int getPos(){
+
         int pos = 0;
         Node <E>*temp = head;
         while(temp != current){

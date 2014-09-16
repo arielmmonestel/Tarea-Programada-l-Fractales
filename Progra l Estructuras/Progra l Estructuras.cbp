@@ -38,6 +38,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Constants.h" />
+		<Unit filename="include/LevyCCurve.h" />
 		<Unit filename="include/LinkedList.h" />
 		<Unit filename="include/Nodo.h" />
 		<Unit filename="main.cpp" />
