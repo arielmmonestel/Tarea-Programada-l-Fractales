@@ -1,18 +1,17 @@
 #ifndef LEVYCCURVE_H
 #define LEVYCCURVE_H
-#include  "DoubleLinkedList.h"
-#include "DNode.h"
-#include "Constants.h"
 
+#include "Constants.h"
+#include "Drawing.h"
 #define POS_COUNT_TO_ADVANCE 6;
 
 #define DEFAULT_ITERATIONS 50;
 
-class LevyCCurve{
+class LevyCCurve : public Drawing{
 
 private:
 
-    DoubleLinkedList<DrawInstructions> ListaInstrucciones;
+
 
     void IniciarLista (){
         ListaInstrucciones.clear();
@@ -46,7 +45,7 @@ private:
 public:
 
     LevyCCurve() {
-
+        gradosAumentar = 45;
     }
 
 
@@ -83,9 +82,8 @@ public:
                 break;
 
             }
-
-
         }
+        cout << endl;
     }
 
 };

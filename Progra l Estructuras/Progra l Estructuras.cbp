@@ -44,6 +44,7 @@
 		<Unit filename="include/CurvaDelDragon.h" />
 		<Unit filename="include/DNode.h" />
 		<Unit filename="include/DoubleLinkedList.h" />
+		<Unit filename="include/Drawing.h" />
 		<Unit filename="include/LevyCCurve.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

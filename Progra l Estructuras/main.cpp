@@ -2,66 +2,63 @@
 #include <winbgim.h>
 #include <math.h>
 #include <time.h>
-#include "DoubleLinkedList.h"
+
+
 #include "Constants.h"
 #include "LevyCCurve.h"
+#include "CurvaDelDragon.h"
+#include  "DoubleLinkedList.h"
+#include <stdexcept>
 
-#define PI 3.14159265
 using namespace std;
 
-void drawLine(int &x, int &y, int gradosx, int gradosy){
+const int DISTANCIA = 45;
+int grados;
+int x = 1200/2;
+       int  y = 900/2;
+void drawLine(){
 
-    circle(x,y, 5);
-    double cosRes = cos(gradosx*PI/180);
-    double sinRes = sin(gradosy*PI/180);
-    int x2 = x + 45 * (cosRes == 1 ? 0 : cosRes);
-    int y2 = y + 45 * (sinRes == 1 ? 0 : sinRes);
-    cout << x2 << "," << y2 << endl;
-    //srand(time(NULL));
 
-    setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
-    line (x, y, x2, y2);
-    x = x2;
-    y = y2;
-}
 
+
+        int x2 = ceil(x + DISTANCIA * cos(grados*PI/180));
+        int y2 = ceil(y + DISTANCIA * sin(grados*PI/180));
+
+        //srand(time(NULL));
+
+        setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
+        line (x, y, x2, y2);
+        x = x2;
+        y = y2;
+    }
 
 int main()
 {
 
     //10347
-    if(0){
+    if(45){
         cout << "hola "<< endl;
     }
-    cout<< cos(0 * PI / 180) << endl;
+    int a = 0.6;
+    cout<< a << endl;
 
     cout<< 45 / 2 << endl;
     srand(time(NULL));
     LevyCCurve curva;
 
-    curva.GenerarLista(2);
-    curva.getLista();
-    initwindow (1200,900);
-    int x = 1200/2;
-    int y = 900/2;
+    //initwindow (1200,900);
 
-    drawLine(x, y, 45, 45);
-    drawLine(x, y, -45, 0);
-
-    //drawLine(x, y, -45, 45);
-
-    /*circle(x,y, 10);
-
-    setcolor(COLOR(12,100,0));
-    line (x, y, x2, y2);
+    curva.GenerarLista(7);
+    //curva.getLista();
+    curva.drawFractal();
 
 
 
-    setcolor(COLOR(255,255,255));
-    x2 = x + 45;
-    y2 = y - 45;
-    circle(x,y, 10);
-    line (x, y, x2, y2);*/
+    /*drawLine();
+    grados =- 45 - 45;
+    drawLine();
+    grados =+ 45;
+    drawLine();*/
 
     //lineto(x,y);
 
