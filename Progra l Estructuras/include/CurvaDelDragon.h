@@ -25,10 +25,10 @@ class CurvaDelDragon
 
     void buscarInsertar(){
 
-        for(ListaInstrucciones.goToStart();ListaInstrucciones.getPos()<ListaInstrucciones.getSize();ListaInstrucciones.next()){
+        for(ListaInstrucciones.goToPos(1);ListaInstrucciones.getPos()<ListaInstrucciones.getSize();ListaInstrucciones.next()){
 
-            int cont = 1;
-            DrawInstructions currentElement = ListaInstrucciones.goToPos(cont);
+            //int cont = 1;
+            DrawInstructions currentElement = ListaInstrucciones.getElement();
             ListaInstrucciones.goToEnd();
 
             if(currentElement != ListaInstrucciones.getElement()){
@@ -44,9 +44,6 @@ class CurvaDelDragon
                     ListaInstrucciones.append(DrawInstructions::I);
                 }
 
-             cont ++
-             ListaInstrucciones.goToEnd();
-
 
              }
 
@@ -61,10 +58,6 @@ class CurvaDelDragon
                     ListaInstrucciones.append(DrawInstructions::I);
                     ListaInstrucciones.append(DrawInstructions::D);
                 }
-
-             cont ++
-             ListaInstrucciones.goToEnd();
-
 
              }
 
