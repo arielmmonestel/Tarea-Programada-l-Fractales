@@ -19,41 +19,52 @@ class CurvaDelDragon
     void iniciarLista(){
         ListaInstrucciones.clear();
         ListaInstrucciones.append(DrawInstructions::D);
+        ListaInstrucciones.append(DrawInstructions::D);
+        ListaInstrucciones.append(DrawInstructions::I);
     }
 
     void buscarInsertar(){
 
         for(ListaInstrucciones.goToStart();ListaInstrucciones.getPos()<ListaInstrucciones.getSize();ListaInstrucciones.next()){
-             int currentPost = ListaInstrucciones.getElement();
+
+            int cont = 1;
+            DrawInstructions currentElement = ListaInstrucciones.goToPos(cont);
+            ListaInstrucciones.goToEnd();
+
+            if(currentElement != ListaInstrucciones.getElement()){
+                if (currentElement== DrawInstructions ::D){
+                    ListaInstrucciones.append(DrawInstructions::D);
+                    ListaInstrucciones.append(DrawInstructions::D);
 
 
-
-             if (ListaInstrucciones.getPrevious()== ListaInstrucciones.getElement()){
-
-                if (ListaInstrucciones.getElement() == DrawInstructions ::D){
-                    ListaInstrucciones.append(DrawInstructions::I)
                 }
 
-                if (ListaInstrucciones.getElement() == DrawInstructions ::I){
-                    ListaInstrucciones.append(DrawInstructions::D)
+                if (currentElement== DrawInstructions ::I){
+                    ListaInstrucciones.append(DrawInstructions::I);
+                    ListaInstrucciones.append(DrawInstructions::I);
                 }
 
-             currentPost+= POS_COUNT_TO_ADVANCE;
-             ListaInstrucciones.goToPos(currentPost);
+             cont ++
+             ListaInstrucciones.goToEnd();
+
 
              }
 
-             if (ListaInstrucciones.getPrevious()!= ListaInstrucciones.getElement()){
+             if (currentElement== ListaInstrucciones.getElement()){
 
                 if (ListaInstrucciones.getElement() == DrawInstructions ::D){
-                    ListaInstrucciones.append(DrawInstructions::D)
+                    ListaInstrucciones.append(DrawInstructions::D);
+                    ListaInstrucciones.append(DrawInstructions::I);
                 }
 
                 if (ListaInstrucciones.getElement() == DrawInstructions ::I){
-                    ListaInstrucciones.append(DrawInstructions::I)
+                    ListaInstrucciones.append(DrawInstructions::I);
+                    ListaInstrucciones.append(DrawInstructions::D);
                 }
-             currentPost+= POS_COUNT_TO_ADVANCE;
-             ListaInstrucciones.goToPos(currentPost);
+
+             cont ++
+             ListaInstrucciones.goToEnd();
+
 
              }
 

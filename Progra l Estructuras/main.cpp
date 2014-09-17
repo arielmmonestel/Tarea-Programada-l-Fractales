@@ -1,10 +1,11 @@
 #include <iostream>‪
 #include <winbgim.h>
 #include <math.h>
-#include "LinkedList.h"
+
 #include "Constants.h"
 #include "LevyCCurve.h"
-
+#include  "DoubleLinkedList.h"
+#include <stdexcept>
 using namespace std;
 
 
