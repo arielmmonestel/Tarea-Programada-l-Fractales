@@ -41,8 +41,9 @@
 		</Compiler>
 		<Unit filename="include/Constants.h" />
 		<Unit filename="include/CurvaDelDragon.h" />
+		<Unit filename="include/DNode.h" />
+		<Unit filename="include/DoubleLinkedList.h" />
 		<Unit filename="include/LevyCCurve.h" />
-		<Unit filename="include/LinkedList.h" />
 		<Unit filename="include/Nodo.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

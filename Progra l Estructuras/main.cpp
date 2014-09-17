@@ -15,7 +15,7 @@ int main()
 
     LevyCCurve curva;
 
-    curva.GenerarLista(5);
+    curva.GenerarLista(2);
     curva.getLista();
     initwindow (1200,900);
     int x = 1200/2;

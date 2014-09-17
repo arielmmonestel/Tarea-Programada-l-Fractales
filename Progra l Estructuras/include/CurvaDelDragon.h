@@ -1,7 +1,7 @@
 #ifndef CURVADELDRAGON_H
 #define CURVADELDRAGON_H
-#include  "LinkedList.h"
-#include "Nodo.h"
+#include  "DoubleDoubleLinkedList.h"
+#include "DNode.h"
 #include "Constants.h"
 
 #define POS_COUNT_TO_ADVANCE 6;
@@ -14,7 +14,7 @@ class CurvaDelDragon
 {
     private:
 
-        LinkedList<DrawInstructions> ListaInstrucciones;
+        DoubleLinkedList<DrawInstructions> ListaInstrucciones;
 
     void iniciarLista(){
         ListaInstrucciones.clear();
