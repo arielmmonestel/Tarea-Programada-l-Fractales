@@ -106,6 +106,17 @@ public:
         }
     }
 
+    E getPrevious(){
+        if (current != head){
+            Node<E> * temp = head;
+            while(temp -> next != current){
+                temp = temp -> next;
+            }
+            current = temp;
+        }
+        return current->element;
+    }
+
 
     void goToStart(){
         current = head;
