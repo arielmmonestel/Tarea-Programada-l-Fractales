@@ -25,3 +25,29 @@
 	"Nodo.h"
 	"Constants.h"
 
+1410889415 source:c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\main.cpp
+	<iostream>
+	<winbgim.h>
+	<math.h>
+	"LinkedList.h"
+	"Constants.h"
+	"LevyCCurve.h"
+
+1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\linkedlist.h
+	<iostream>
+	<cstdlib>
+	<stdexcept>
+	"Nodo.h"
+	<conio.h>
+	<time.h>
+
+1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\nodo.h
+	<stdio.h>
+
+1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\constants.h
+
+1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+	"LinkedList.h"
+	"Nodo.h"
+	"Constants.h"
+
