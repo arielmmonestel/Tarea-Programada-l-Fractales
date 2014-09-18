@@ -18,8 +18,9 @@ class CurvaDelDragon
 
     void iniciarLista(){
         ListaInstrucciones.clear();
-        //ListaInstrucciones.append(DrawInstructions::A);
+
         ListaInstrucciones.append(DrawInstructions::D);
+        ListaInstrucciones.append(DrawInstructions::A);
     }
 
     void buscarInsertar(){
@@ -27,74 +28,49 @@ class CurvaDelDragon
         for(ListaInstrucciones.goToStart();ListaInstrucciones.getPos() <= ListaInstrucciones.getSize();ListaInstrucciones.next()){
 
            //ListaInstrucciones.goToStart();
-           //ListaInstrucciones.insert(DrawInstructions::A);
-            ListaInstrucciones.insert(toInsert);
 
+            ListaInstrucciones.insert(DrawInstructions::A);
+            ListaInstrucciones.insert(toInsert);
+            ListaInstrucciones.next();
+            ListaInstrucciones.next();
             ListaInstrucciones.next();
             if(toInsert == DrawInstructions::D){
                 cout << "cambio D por I" << endl;
                 toInsert = DrawInstructions::I;
-                //continue;
-                break;
+
+                continue;
+
             }
 
             if(toInsert == DrawInstructions::I){
                 toInsert = DrawInstructions::D;
                 cout << "cambio I por D" << endl;
-
             }
-            //ListaInstrucciones.next();
-            //cout << "Me movi una posicion" << endl;
-
-            //cout << "inserte la I" << endl;
-
-            //ListaInstrucciones.goToStart();
-            //cout << "Me fui al inicio" << endl;
-
-
 
         }
+
+
+  /*
+        DrawInstructions AtoInsert=DrawInstructions::A;
+        for(ListaInstrucciones.goToEnd();ListaInstrucciones.getPos()>0;ListaInstrucciones.previous()){
+                    ListaInstrucciones.insert(AtoInsert);
+
+         if (ListaInstrucciones.getElement()==DrawInstructions ::D ){
+                ListaInstrucciones.insert(AtoInsert);
+             //   ListaInstrucciones.next();
+                continue;
+         }
+         if (ListaInstrucciones.getElement()==DrawInstructions ::I ){
+            ListaInstrucciones.insert(AtoInsert);
+           // ListaInstrucciones.next();
+        }
+        */
+
+
 
     }
 
 
-/*
-
-
-DrawInstructions currentElement = ListaInstrucciones.getElement();
-
-
-            if(currentElement != ListaInstrucciones.getElement()){
-                if (currentElement== DrawInstructions ::D){
-                    ListaInstrucciones.append(DrawInstructions::D);
-                    ListaInstrucciones.append(DrawInstructions::D);
-
-
-                }
-
-                if (currentElement== DrawInstructions ::I){
-                    ListaInstrucciones.append(DrawInstructions::I);
-                    ListaInstrucciones.append(DrawInstructions::I);
-                }
-
-
-             }
-
-             if (currentElement== ListaInstrucciones.getElement()){
-
-                if (ListaInstrucciones.getElement() == DrawInstructions ::D){
-                    ListaInstrucciones.append(DrawInstructions::D);
-                    ListaInstrucciones.append(DrawInstructions::I);
-                }
-
-                if (ListaInstrucciones.getElement() == DrawInstructions ::I){
-                    ListaInstrucciones.append(DrawInstructions::I);
-                    ListaInstrucciones.append(DrawInstructions::D);
-                }
-
-             }
-
-*/
 
     public:
 
