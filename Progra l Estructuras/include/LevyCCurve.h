@@ -1,7 +1,7 @@
 #ifndef LEVYCCURVE_H
 #define LEVYCCURVE_H
-#include  "LinkedList.h"
-#include "Nodo.h"
+#include  "DoubleLinkedList.h"
+#include "DNode.h"
 #include "Constants.h"
 
 #define POS_COUNT_TO_ADVANCE 6;
@@ -12,7 +12,7 @@ class LevyCCurve{
 
 private:
 
-    LinkedList<DrawInstructions> ListaInstrucciones;
+    DoubleLinkedList<DrawInstructions> ListaInstrucciones;
 
     void IniciarLista (){
         ListaInstrucciones.clear();

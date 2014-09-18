@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1410843677 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1410923490 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
 	<math.h>
@@ -7,7 +7,7 @@
 	"Constants.h"
 	"LevyCCurve.h"
 
-1410833813 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\linkedlist.h
+1410922266 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\linkedlist.h
 	<iostream>
 	<cstdlib>
 	<stdexcept>
@@ -20,11 +20,38 @@
 
 1410829708 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\constants.h
 
-1410833110 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+1410923712 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+	"DoubleLinkedList.h"
+	"DNode.h"
+	"Constants.h"
+
+1410921318 source:c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\main.cpp
+	<iostream>
+	<winbgim.h>
+	<math.h>
+	"LinkedList.h"
+	"Constants.h"
+	"LevyCCurve.h"
+
+1410852391 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\linkedlist.h
+	<iostream>
+	<cstdlib>
+	<stdexcept>
+	"Nodo.h"
+	<conio.h>
+	<time.h>
+
+1410844409 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\nodo.h
+	<stdio.h>
+
+1410847150 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\constants.h
+
+1410921291 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
 	"LinkedList.h"
 	"Nodo.h"
 	"Constants.h"
 
+<<<<<<< HEAD
 1410889415 source:c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
@@ -50,4 +77,10 @@
 	"LinkedList.h"
 	"Nodo.h"
 	"Constants.h"
+=======
+1410923584 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
+
+1410923735 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\doublelinkedlist.h
+	"DNode.h"
+>>>>>>> ed3740a1cb3a81e40c05b5f2f447b0c3719972f5
 
