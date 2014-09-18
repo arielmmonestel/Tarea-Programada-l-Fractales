@@ -1,11 +1,14 @@
 # depslib dependency file v1.0
-1410923490 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1411012465 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
 	<math.h>
-	"LinkedList.h"
+	<time.h>
 	"Constants.h"
 	"LevyCCurve.h"
+	"CurvaDelDragon.h"
+	"DoubleLinkedList.h"
+	<stdexcept>
 
 1410922266 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\linkedlist.h
 	<iostream>
@@ -20,10 +23,9 @@
 
 1410829708 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\constants.h
 
-1410923712 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
-	"DoubleLinkedList.h"
-	"DNode.h"
+1411012550 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
 	"Constants.h"
+	"Drawing.h"
 
 1410921318 source:c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
@@ -53,6 +55,18 @@
 
 1410923584 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
 
-1410923735 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\doublelinkedlist.h
+1410933153 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\doublelinkedlist.h
+	"DNode.h"
+	<iostream>
+	<cstdlib>
+	<stdexcept>
+
+1410934273 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
+	"DoubleLinkedList.h"
+	"DNode.h"
+	"Constants.h"
+
+1411012588 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
+	"DoubleLinkedList.h"
 	"DNode.h"
 

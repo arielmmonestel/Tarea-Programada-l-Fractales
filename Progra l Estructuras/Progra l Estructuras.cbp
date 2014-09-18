@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add option="-lbgi -lgdi32 -luser32" />
 					<Add directory="include" />
@@ -43,8 +44,8 @@
 		<Unit filename="include/CurvaDelDragon.h" />
 		<Unit filename="include/DNode.h" />
 		<Unit filename="include/DoubleLinkedList.h" />
+		<Unit filename="include/Drawing.h" />
 		<Unit filename="include/LevyCCurve.h" />
-		<Unit filename="include/Nodo.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
