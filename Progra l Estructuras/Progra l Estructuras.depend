@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1410946226 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1411012465 source:c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
 	<math.h>
@@ -23,7 +23,7 @@
 
 1410829708 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\constants.h
 
-1410942750 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+1411012550 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
 	"Constants.h"
 	"Drawing.h"
 
@@ -66,7 +66,7 @@
 	"DNode.h"
 	"Constants.h"
 
-1410948305 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
+1411012588 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
 	"DoubleLinkedList.h"
 	"DNode.h"
 

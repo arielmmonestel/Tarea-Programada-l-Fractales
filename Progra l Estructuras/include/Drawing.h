@@ -8,6 +8,7 @@ class Drawing {
 
 public:
 
+    //Largo de la linea dibujada
     const int DISTANCIA = 30;
     int grados;
     int gradosAumentar;
@@ -68,6 +69,28 @@ public:
                     }
             }
         }
+    }
+
+    void getLista(){
+
+        for(ListaInstrucciones.goToStart(); ListaInstrucciones.getPos() < ListaInstrucciones.getSize(); ListaInstrucciones.next()){
+
+            switch(ListaInstrucciones.getElement()){
+
+            case DrawInstructions::A:
+                cout << "A,";
+                break;
+
+            case DrawInstructions::I:
+                cout << "I,";
+                break;
+            case DrawInstructions::D:
+                cout << "D,";
+                break;
+
+            }
+        }
+        cout << endl;
     }
 
 

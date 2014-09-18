@@ -21,19 +21,19 @@
 			<Cursor1 position="576" topLine="51" />
 		</Cursor>
 	</File>
+	<File name="include\Drawing.h" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="177" topLine="33" />
+		</Cursor>
+	</File>
 	<File name="include\LevyCCurve.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1299" topLine="18" />
+			<Cursor1 position="1271" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="361" topLine="5" />
-		</Cursor>
-	</File>
-	<File name="include\Drawing.h" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="444" topLine="28" />
+			<Cursor1 position="399" topLine="9" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
