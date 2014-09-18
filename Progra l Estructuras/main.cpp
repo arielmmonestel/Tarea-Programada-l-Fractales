@@ -1,11 +1,12 @@
 #include <iostream>‪
 #include <winbgim.h>
 #include <math.h>
-#include <stdexcept>
-
+#include <time.h>
 #include "Constants.h"
 #include "LevyCCurve.h"
-
+#include "CurvaDelDragon.h"
+#include  "DoubleLinkedList.h"
+#include <stdexcept>
 
 using namespace std;
 
@@ -15,36 +16,20 @@ int distancey = 45;
 
 
 
+
 int main()
 {
 
-    //10347
 
+    srand(time(NULL));
     LevyCCurve curva;
 
-    curva.GenerarLista(2);
-    //curva.getLista();
-    curva.draw
-
-    //lineto(x,y);
-
-    //line(0,7,80,90);
+    curva.GenerarLista(15);
+    curva.getLista();
+    curva.drawFractal();
     getch();
     closegraph();
-    //cout << listilla.getElement() << endl;
-    /*for(listilla.goToStart(); listilla.getPos() < listilla.getSize(); listilla.next()){
-        cout << listilla.getElement() << endl;
-    }*/
 
-/*initwindow (600,400);
 
-do{
-rectangle(mousex(),mousey(),100,100);
-cleardevice();
-}while(!kbhit());
-
-    initwindow (600,400);
-    getch();
-    closegraph();*/
 
 }

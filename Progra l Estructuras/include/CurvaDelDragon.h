@@ -1,6 +1,6 @@
 #ifndef CURVADELDRAGON_H
 #define CURVADELDRAGON_H
-#include  "DoubleDoubleLinkedList.h"
+#include  "DoubleLinkedList.h"
 #include "DNode.h"
 #include "Constants.h"
 
@@ -18,18 +18,51 @@ class CurvaDelDragon
 
     void iniciarLista(){
         ListaInstrucciones.clear();
+        //ListaInstrucciones.append(DrawInstructions::A);
         ListaInstrucciones.append(DrawInstructions::D);
-        ListaInstrucciones.append(DrawInstructions::D);
-        ListaInstrucciones.append(DrawInstructions::I);
     }
 
     void buscarInsertar(){
+        DrawInstructions toInsert = DrawInstructions::D;
+        for(ListaInstrucciones.goToStart();ListaInstrucciones.getPos() <= ListaInstrucciones.getSize();ListaInstrucciones.next()){
 
-        for(ListaInstrucciones.goToPos(1);ListaInstrucciones.getPos()<ListaInstrucciones.getSize();ListaInstrucciones.next()){
+           //ListaInstrucciones.goToStart();
+           //ListaInstrucciones.insert(DrawInstructions::A);
+            ListaInstrucciones.insert(toInsert);
 
-            //int cont = 1;
-            DrawInstructions currentElement = ListaInstrucciones.getElement();
-            ListaInstrucciones.goToEnd();
+            ListaInstrucciones.next();
+            if(toInsert == DrawInstructions::D){
+                cout << "cambio D por I" << endl;
+                toInsert = DrawInstructions::I;
+                //continue;
+                break;
+            }
+
+            if(toInsert == DrawInstructions::I){
+                toInsert = DrawInstructions::D;
+                cout << "cambio I por D" << endl;
+
+            }
+            //ListaInstrucciones.next();
+            //cout << "Me movi una posicion" << endl;
+
+            //cout << "inserte la I" << endl;
+
+            //ListaInstrucciones.goToStart();
+            //cout << "Me fui al inicio" << endl;
+
+
+
+        }
+
+    }
+
+
+/*
+
+
+DrawInstructions currentElement = ListaInstrucciones.getElement();
+
 
             if(currentElement != ListaInstrucciones.getElement()){
                 if (currentElement== DrawInstructions ::D){
@@ -61,13 +94,7 @@ class CurvaDelDragon
 
              }
 
-
-        }
-
-    }
-
-
-
+*/
 
     public:
 
