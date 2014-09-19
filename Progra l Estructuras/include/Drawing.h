@@ -1,15 +1,17 @@
 #ifndef DRAWING_H
 #define DRAWING_H
-#define PI 3.14159265
+#define PI 3.14
+#include <iostream>
 #include  "DoubleLinkedList.h"
 #include "DNode.h"
-
+#define X_WINDOW 1200
+#define Y_WINDOW 700
 class Drawing {
 
 public:
 
     //Largo de la linea dibujada
-    const int DISTANCIA = 30;
+    const int DISTANCIA =45;
     int grados;
     int gradosAumentar;
     int x;
@@ -30,13 +32,17 @@ public:
 
 
 
-        int x2 = floor(x + DISTANCIA * cos(grados*PI/180));
-        int y2 = floor(y + DISTANCIA * sin(grados*PI/180));
+        int x2 = x + DISTANCIA * cos(grados*PI/180);
+        int y2 = y + DISTANCIA * sin(grados*PI/180);
+
+
 
         //srand(time(NULL));
 
-        setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
+        //setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
         line (x, y, x2, y2);
+        cout<<x2<<","<<y2<<endl;
+        Sleep(500);
         //circle(x,y, 20 + (rand() % 30));
         x = x2;
         y = y2;
@@ -44,9 +50,9 @@ public:
 
     void drawFractal(){
 
-        initwindow (1200,900);
-        x = 1200/2;
-        y = 900/2;
+        initwindow (X_WINDOW,Y_WINDOW);
+        x = X_WINDOW/2;
+        y = Y_WINDOW/2;
 
         if(ListaInstrucciones.getSize() == 0){
             cout << "Lista vacia" << endl;

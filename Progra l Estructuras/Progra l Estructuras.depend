@@ -53,14 +53,18 @@
 	"Nodo.h"
 	"Constants.h"
 
-<<<<<<< HEAD
-1410889415 source:c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1410921291 D
+
+1411080642 source:c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
 	<math.h>
-	"LinkedList.h"
+	<time.h>
+	<stdexcept>
 	"Constants.h"
 	"LevyCCurve.h"
+	"CurvaDelDragon.h"
+	"DoubleLinkedList.h"
 
 1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\linkedlist.h
 	<iostream>
@@ -75,11 +79,12 @@
 
 1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\constants.h
 
-1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
-	"LinkedList.h"
-	"Nodo.h"
+1411055460 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
 	"Constants.h"
-=======
+	"Drawing.h"
+
+1410881160 .h"
+
 1410923584 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
 
 1410933153 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\doublelinkedlist.h
@@ -96,5 +101,22 @@
 1411012588 c:\users\will\proyectos\c++\tareaestructuras\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
 	"DoubleLinkedList.h"
 	"DNode.h"
->>>>>>> ed3740a1cb3a81e40c05b5f2f447b0c3719972f5
+
+1411012588 740a1cb3a81e40c05b5f2f447b0c3719972f5
+
+1411081578 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
+	<iostream>
+	"DoubleLinkedList.h"
+	"DNode.h"
+
+1410969443 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\doublelinkedlist.h
+	"DNode.h"
+	<stdexcept>
+
+1410969443 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
+
+1411055460 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
+	"DoubleLinkedList.h"
+	"DNode.h"
+	"Constants.h"
 
