@@ -1,6 +1,6 @@
 #ifndef DRAWING_H
 #define DRAWING_H
-#define PI 3.14
+#define PI 3.14159265358979
 #include <iostream>
 #include  "DoubleLinkedList.h"
 #include "DNode.h"
@@ -11,7 +11,7 @@ class Drawing {
 public:
 
     //Largo de la linea dibujada
-    const int DISTANCIA =45;
+    const int DISTANCIA =15;
     int grados;
     int gradosAumentar;
     int x;
@@ -29,20 +29,24 @@ public:
 
     void drawLine(){
 
-
-
-
-        int x2 = x + DISTANCIA * cos(grados*PI/180);
-        int y2 = y + DISTANCIA * sin(grados*PI/180);
+        //cout<< "dibujando" << endl;
+        int nuevaDistanciaX = DISTANCIA * cos(grados*PI/180);
+        int nuevaDistanciaY = DISTANCIA * sin(grados*PI/180);
+        //cout<< cosN << endl;
+        int x2 = x +  nuevaDistanciaX;
+        int y2 = y +  nuevaDistanciaY;
 
 
 
         //srand(time(NULL));
+        setlinestyle(SOLID_LINE,6,4);
+/*Utilizada para deterrminar el tipo de linea que sera usada por el usuario. Requiere 3 argumentos. El primero es el que define el tipo de linea, soporta: CENTER_LINE, DOTTED_LINE,
+DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el ancho de la linea.*/
 
-        //setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
+        setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
         line (x, y, x2, y2);
-        cout<<x2<<","<<y2<<endl;
-        Sleep(500);
+        //cout<<"X: "<<x2<<", Y: "<<y2<<", COS: "<<nuevaDistanciaX<<", SEN: "<<nuevaDistanciaY<<endl;
+        //Sleep(500);
         //circle(x,y, 20 + (rand() % 30));
         x = x2;
         y = y2;
@@ -51,9 +55,8 @@ public:
     void drawFractal(){
 
         initwindow (X_WINDOW,Y_WINDOW);
-        x = X_WINDOW/2;
+        x = X_WINDOW/1.3;
         y = Y_WINDOW/2;
-
         if(ListaInstrucciones.getSize() == 0){
             cout << "Lista vacia" << endl;
         }
@@ -75,6 +78,10 @@ public:
                     }
             }
         }
+
+        getch();
+        closegraph();
+
     }
 
     void getLista(){
@@ -98,7 +105,6 @@ public:
         }
         cout << endl;
     }
-
 
 };
 

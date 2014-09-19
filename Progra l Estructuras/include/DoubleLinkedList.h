@@ -91,7 +91,7 @@ class DoubleLinkedList
     }
 
     void next() {
-        if (current != tail->previous) {
+         if (current != tail) {
             current = current->next;
         }
     }

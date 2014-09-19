@@ -38,6 +38,7 @@ private:
 
                 ListaInstrucciones.goToPos(currentPost);
                 ListaInstrucciones.remove();
+                //cout<< "generando" << endl;
             }
         }
     }
