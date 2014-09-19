@@ -3,18 +3,18 @@
 #include  "DoubleLinkedList.h"
 #include "DNode.h"
 #include "Constants.h"
-
+#include "Drawing.h"
 #define POS_COUNT_TO_ADVANCE 6;
 
 #define DEFAULT_ITERATIONS 50;
 
 
 
-class CurvaDelDragon
-{
+class CurvaDelDragon: public Drawing{
+
     private:
 
-        DoubleLinkedList<DrawInstructions> ListaInstrucciones;
+        //DoubleLinkedList<DrawInstructions> ListaInstrucciones;
 
     void iniciarLista(){
         ListaInstrucciones.clear();
@@ -27,15 +27,13 @@ class CurvaDelDragon
         DrawInstructions toInsert = DrawInstructions::D;
         for(ListaInstrucciones.goToStart();ListaInstrucciones.getPos() <= ListaInstrucciones.getSize();ListaInstrucciones.next()){
 
-           //ListaInstrucciones.goToStart();
-
             ListaInstrucciones.insert(DrawInstructions::A);
             ListaInstrucciones.insert(toInsert);
             ListaInstrucciones.next();
             ListaInstrucciones.next();
             ListaInstrucciones.next();
             if(toInsert == DrawInstructions::D){
-                cout << "cambio D por I" << endl;
+                //cout << "cambio D por I" << endl;
                 toInsert = DrawInstructions::I;
 
                 continue;
@@ -44,27 +42,11 @@ class CurvaDelDragon
 
             if(toInsert == DrawInstructions::I){
                 toInsert = DrawInstructions::D;
-                cout << "cambio I por D" << endl;
+                //cout << "cambio I por D" << endl;
             }
 
         }
 
-
-  /*
-        DrawInstructions AtoInsert=DrawInstructions::A;
-        for(ListaInstrucciones.goToEnd();ListaInstrucciones.getPos()>0;ListaInstrucciones.previous()){
-                    ListaInstrucciones.insert(AtoInsert);
-
-         if (ListaInstrucciones.getElement()==DrawInstructions ::D ){
-                ListaInstrucciones.insert(AtoInsert);
-             //   ListaInstrucciones.next();
-                continue;
-         }
-         if (ListaInstrucciones.getElement()==DrawInstructions ::I ){
-            ListaInstrucciones.insert(AtoInsert);
-           // ListaInstrucciones.next();
-        }
-        */
 
 
 
@@ -74,7 +56,9 @@ class CurvaDelDragon
 
     public:
 
-        CurvaDelDragon() {}
+        CurvaDelDragon() {
+         gradosAumentar = 90;
+        }
         virtual ~CurvaDelDragon() {}
 
         void GenerarLista(int pIteraciones){

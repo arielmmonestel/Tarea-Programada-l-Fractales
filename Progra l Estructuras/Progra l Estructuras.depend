@@ -27,7 +27,7 @@
 	"Constants.h"
 	"Drawing.h"
 
-1411062508 source:c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1411103431 source:c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
 	<math.h>
@@ -72,7 +72,7 @@
 	"DoubleLinkedList.h"
 	"DNode.h"
 
-1411013919 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
+1411087954 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
 	"DoubleLinkedList.h"
 	"DNode.h"
 
@@ -82,8 +82,9 @@
 
 1410923876 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
 
-1411063078 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
+1411086490 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
 	"DoubleLinkedList.h"
 	"DNode.h"
 	"Constants.h"
+	"Drawing.h"
 

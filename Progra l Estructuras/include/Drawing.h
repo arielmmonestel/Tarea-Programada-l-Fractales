@@ -34,9 +34,14 @@ public:
         int y2 = floor(y + DISTANCIA * sin(grados*PI/180));
 
         //srand(time(NULL));
+        setlinestyle(SOLID_LINE,6,4);
+/*Utilizada para deterrminar el tipo de linea que sera usada por el usuario. Requiere 3 argumentos. El primero es el que define el tipo de linea, soporta: CENTER_LINE, DOTTED_LINE,
+DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el ancho de la linea.*/
 
         setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
         line (x, y, x2, y2);
+
+
         //circle(x,y, 20 + (rand() % 30));
         x = x2;
         y = y2;
@@ -45,7 +50,7 @@ public:
     void drawFractal(){
 
         initwindow (1200,900);
-        x = 1200/2;
+        x = 1200/1.3;
         y = 900/2;
 
         if(ListaInstrucciones.getSize() == 0){
@@ -92,7 +97,6 @@ public:
         }
         cout << endl;
     }
-
 
 };
 
