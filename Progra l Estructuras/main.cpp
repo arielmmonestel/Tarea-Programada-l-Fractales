@@ -14,7 +14,7 @@ using namespace std;
 
 
 
-static int mostrarMenu(){//Metodo para  imprimir el menu principal en pantalla con un Switch a cada tipo de lista.
+int mostrarMenu(){//Metodo para  imprimir el menu principal en pantalla con un Switch a cada tipo de lista.
 
     bool salir = false;
 
@@ -45,72 +45,46 @@ cin>>opcion;
 int main()
 {
 
-    mostrarMenu();
+    CurvaDelDragon curva;
+    LevyCCurve curva1;
+    LevyCCurve curva2;
+
+    srand(time(NULL));
+    bool salir = false;
+    while(!salir)
+    {
+        int opcion = mostrarMenu();
+        switch(opcion){ //Switch para el menu principal
+
+            case 1:
 
 
-bool salir = false;
-while(!salir)
-{
-    switch(mostrarMenu()){ //Switch para el menu principal
-
-        case 1: srand(time(NULL));
-                CurvaDelDragon  curva;
                 curva.GenerarLista(11);
                 curva.drawFractal();
-                getch();
-                closegraph();
-                initwindow (600,400);break;
-        case 2: srand(time(NULL));
-                LevyCCurve  curva1;
+                break;
+            case 2:
+
+
                 curva1.GenerarLista(11);
                 curva1.drawFractal();
-                getch();
-                closegraph();
-                initwindow (600,400);break;
-
-        case 3: srand(time(NULL));
-                LevyCCurve  curva2;
-                curva2.GenerarLista(11);
-                curva2.drawFractal();
-                getch();
-                closegraph();
-                initwindow (600,400);
                 break;
 
-        case 4: salir = true; break;
-        default: cout<<"Error, opcion no valida"<< endl; break;
+            case 3:
+
+                curva2.GenerarLista(11);
+                curva2.drawFractal();
+                break;
+
+            case 4:
+                salir = true;
+                break;
+
+            default:
+                cout<<"Error, opcion no valida"<< endl;
+                //break;
+        }
     }
-}
 
     return 0;
-/*    CurvaDelDragon curva;
-    curva.GenerarLista(2);
-    curva.getLista();
-*/
-/*
-    srand(time(NULL));
-    LevyCCurve  curva;
-
-    //initwindow (1200,900);
-
-    curva.GenerarLista(11);
-    //curva.getLista();
-    curva.drawFractal();
-
-
-    getch();
-    closegraph();
-
-
-initwindow (600,400);
-/*
-do{
-rectangle(mousex(),mousey(),100,100);
-cleardevice();
-}while(!kbhit());
-
-    initwindow (600,400);
-    getch();
-    closegraph();*/
 
 }

@@ -57,7 +57,7 @@ class CurvaDelDragon: public Drawing{
     public:
 
         CurvaDelDragon() {
-         gradosAumentar = 90;
+            gradosAumentar = 90;
         }
         virtual ~CurvaDelDragon() {}
 

@@ -9,7 +9,7 @@ class Drawing {
 public:
 
     //Largo de la linea dibujada
-    const int DISTANCIA = 30;
+    const int DISTANCIA = 15;
     int grados;
     int gradosAumentar;
     int x;
@@ -74,6 +74,10 @@ DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el 
                     }
             }
         }
+
+        getch();
+        closegraph();
+
     }
 
     void getLista(){
