@@ -4,8 +4,8 @@
 #include <iostream>
 #include  "DoubleLinkedList.h"
 #include "DNode.h"
-#define X_WINDOW 1200
-#define Y_WINDOW 700
+#define X_WINDOW 1360
+#define Y_WINDOW 655
 class Drawing {
 
 public:
