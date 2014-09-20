@@ -11,7 +11,7 @@ class Drawing {
 public:
 
     //Largo de la linea dibujada
-    const int DISTANCIA =15;
+    const int DISTANCIA =3;
     int grados;
     int gradosAumentar;
     int x;
@@ -39,7 +39,7 @@ public:
 
 
         //srand(time(NULL));
-        setlinestyle(SOLID_LINE,6,4);
+        setlinestyle(CENTER_LINE,1,2);
 /*Utilizada para deterrminar el tipo de linea que sera usada por el usuario. Requiere 3 argumentos. El primero es el que define el tipo de linea, soporta: CENTER_LINE, DOTTED_LINE,
 DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el ancho de la linea.*/
 
@@ -55,7 +55,7 @@ DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el 
     void drawFractal(){
 
         initwindow (X_WINDOW,Y_WINDOW);
-        x = X_WINDOW/1.3;
+        x = X_WINDOW/2;
         y = Y_WINDOW/2;
         if(ListaInstrucciones.getSize() == 0){
             cout << "Lista vacia" << endl;
@@ -65,14 +65,15 @@ DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el 
                 switch(ListaInstrucciones.getElement()){
 
                     case DrawInstructions::A:
-                            drawLine();
+                        drawLine();
                         break;
-
                     case DrawInstructions::I:
                         grados -= gradosAumentar;
+                        //drawLine();
                         break;
                     case DrawInstructions::D:
                         grados += gradosAumentar;
+                        //drawLine();
                         break;
 
                     }
