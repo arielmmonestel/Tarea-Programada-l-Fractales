@@ -32,6 +32,7 @@ class CurvaDelDragon: public Drawing{
             ListaInstrucciones.next();
             ListaInstrucciones.next();
             ListaInstrucciones.next();
+
             if(toInsert == DrawInstructions::D){
                 //cout << "cambio D por I" << endl;
                 toInsert = DrawInstructions::I;

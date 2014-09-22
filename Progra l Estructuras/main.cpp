@@ -6,6 +6,7 @@
 #include "Constants.h"
 #include "LevyCCurve.h"
 #include "Sierpinski.h"
+#include "Otros.h"
 #include "CurvaDelDragon.h"
 #include  "DoubleLinkedList.h"
 
@@ -64,6 +65,7 @@ int main()
     CurvaDelDragon curva;
     Sierpinski curva1;
     LevyCCurve curva2;
+    Otros curva5;
 
     srand(time(NULL));
     bool salir = false;
@@ -91,6 +93,12 @@ int main()
                 cout<<"Cargando ..."<<endl;
                 curva2.GenerarLista(13);
                 curva2.drawFractal();
+                break;
+            case 5:
+                cout <<" "<<endl;
+                cout<<"Cargando ..."<<endl;
+                curva5.GenerarLista(1);
+                curva5.drawFractal();
                 break;
 
             case 4:
