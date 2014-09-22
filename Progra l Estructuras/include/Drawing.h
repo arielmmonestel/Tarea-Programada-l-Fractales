@@ -11,7 +11,7 @@ class Drawing {
 public:
 
     //Largo de la linea dibujada
-    const int DISTANCIA =9;
+    const int DISTANCIA =3;
     int grados;
     int gradosAumentar;
     int x;
