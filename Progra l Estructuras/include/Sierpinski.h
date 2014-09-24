@@ -40,7 +40,7 @@ private:
         }
     }
 
-    void BuscarInsertar()
+    void BuscarInsertar()//Este metodo crea la lista con las instrucciones
     {
         ListaInstrucciones.goToStart();
         toInsert1 = ListaInstrucciones.getElement();
@@ -63,7 +63,7 @@ public:
         gradosAumentar = 60;
     }
 
-    void GenerarLista(int pIteraciones)
+    void GenerarLista(int pIteraciones)//Este metodo realiza la lista segun las pIteraciones que reciba
     {
         IniciarLista();
         for(int i = 0; i < pIteraciones; i++)
