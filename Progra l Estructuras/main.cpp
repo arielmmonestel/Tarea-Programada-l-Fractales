@@ -49,9 +49,9 @@ cout<< ("                 2. Curva de punta de flecha Sierpinsk   ")<< endl;
 cout<<("")<<endl;
 cout<< ("                 3. Curva de Levy C                      ")<< endl;
 cout<<("")<<endl;
-cout<< ("                 4. Fractal de Fabi-Ann                    ")<< endl;
-cout<<("")<<endl;
-cout<< ("                 5. Salir                                ")<< endl;
+//cout<< ("                 4. Fractal de Fabi-Ann                    ")<< endl;
+//cout<<("")<<endl;
+cout<< ("                 4. Salir                                ")<< endl;
 cout<<("")<<endl;
 cin>>opcion;
 
@@ -98,13 +98,13 @@ int main()
                 break;
 
 
-            case 4:
+            case 5:
                 cout <<" "<<endl;
                 cout<<"Cargando ..."<<endl;
                 curva5.GenerarLista(65);
                 curva5.drawFractal();
                 break;
-            case 5:
+            case 4:
                 salir = true;
                 break;
 

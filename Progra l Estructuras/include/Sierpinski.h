@@ -23,6 +23,9 @@ private:
 
     void Cambio()
     {
+        /* Si en toInsert es D lo cambia a I
+            Si es I lo cambia a D
+        */
         if(toInsert1 == DrawInstructions::D)
            toInsert1 = DrawInstructions::I;
         else
@@ -31,9 +34,10 @@ private:
 
     void IncluirAvanze()
     {
+        /* Inserta una A intercalada a lo largo de la lista */
         ListaInstrucciones.goToStart();
-        int k = ListaInstrucciones.getSize();
-        for(ListaInstrucciones; ListaInstrucciones.getPos() < k*2; ListaInstrucciones.next())
+        int k = ListaInstrucciones.getSize()*2;
+        for(ListaInstrucciones; ListaInstrucciones.getPos() < k; ListaInstrucciones.next())
         {
             ListaInstrucciones.next();
             ListaInstrucciones.insert(DrawInstructions::A);

@@ -29,10 +29,9 @@ public:
 
     void drawLine(){
 
-        //cout<< "dibujando" << endl;
-        int nuevaDistanciaX = DISTANCIA * cos(grados*PI/180);
+        int nuevaDistanci
+        aX = DISTANCIA * cos(grados*PI/180);
         int nuevaDistanciaY = DISTANCIA * sin(grados*PI/180);
-        //cout<< cosN << endl;
         int x2 = x +  nuevaDistanciaX;
         int y2 = y +  nuevaDistanciaY;
 
@@ -40,8 +39,10 @@ public:
 
         //srand(time(NULL));
         setlinestyle(CENTER_LINE,1,2);
-/*Utilizada para deterrminar el tipo de linea que sera usada por el usuario. Requiere 3 argumentos. El primero es el que define el tipo de linea, soporta: CENTER_LINE, DOTTED_LINE,
-DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el ancho de la linea.*/
+/*Utilizada para deterrminar el tipo de linea que sera usada por el usuario.
+ Requiere 3 argumentos. El primero es el que define el tipo de linea, soporta:
+ CENTER_LINE, DOTTED_LINE, DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo
+ es el patron y el tercero el ancho de la linea.*/
 
         setcolor(COLOR(rand() % 256, rand() % 256, rand() % 256));
         line (x, y, x2, y2);
@@ -69,13 +70,10 @@ DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el 
                         break;
                     case DrawInstructions::I:
                         grados -= gradosAumentar;
-                        //drawLine();
                         break;
                     case DrawInstructions::D:
                         grados += gradosAumentar;
-                        //drawLine();
                         break;
-
                     }
             }
         }
