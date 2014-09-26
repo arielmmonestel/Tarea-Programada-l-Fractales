@@ -29,8 +29,7 @@ public:
 
     void drawLine(){
 
-        int nuevaDistanci
-        aX = DISTANCIA * cos(grados*PI/180);
+        int nuevaDistanciaX = DISTANCIA * cos(grados*PI/180);
         int nuevaDistanciaY = DISTANCIA * sin(grados*PI/180);
         int x2 = x +  nuevaDistanciaX;
         int y2 = y +  nuevaDistanciaY;

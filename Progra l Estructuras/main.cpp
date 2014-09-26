@@ -101,7 +101,7 @@ int main()
             case 5:
                 cout <<" "<<endl;
                 cout<<"Cargando ..."<<endl;
-                curva5.GenerarLista(65);
+                curva5.GenerarLista(1);
                 curva5.drawFractal();
                 break;
             case 4:
