@@ -23,7 +23,7 @@ class CurvaDelDragon: public Drawing{
         ListaInstrucciones.append(DrawInstructions::A);
     }
 
-    void buscarInsertar(){
+    void buscarInsertar(){//Este metodo crea la lista con las instrucciones
         DrawInstructions toInsert = DrawInstructions::D;
         for(ListaInstrucciones.goToStart();ListaInstrucciones.getPos() <= ListaInstrucciones.getSize();ListaInstrucciones.next()){
 
@@ -34,7 +34,6 @@ class CurvaDelDragon: public Drawing{
             ListaInstrucciones.next();
 
             if(toInsert == DrawInstructions::D){
-                //cout << "cambio D por I" << endl;
                 toInsert = DrawInstructions::I;
 
                 continue;
@@ -43,7 +42,6 @@ class CurvaDelDragon: public Drawing{
 
             if(toInsert == DrawInstructions::I){
                 toInsert = DrawInstructions::D;
-                //cout << "cambio I por D" << endl;
             }
 
         }
@@ -62,7 +60,7 @@ class CurvaDelDragon: public Drawing{
         }
         virtual ~CurvaDelDragon() {}
 
-        void GenerarLista(int pIteraciones){
+        void GenerarLista(int pIteraciones){ //Este metodo realiza la lista segun las pIteraciones que reciba
             iniciarLista();
 
             for(int i = 0; i < pIteraciones; i++)

@@ -23,6 +23,9 @@ private:
 
     void Cambio()
     {
+        /* Si en toInsert es D lo cambia a I
+            Si es I lo cambia a D
+        */
         if(toInsert1 == DrawInstructions::D)
            toInsert1 = DrawInstructions::I;
         else
@@ -31,16 +34,17 @@ private:
 
     void IncluirAvance()
     {
+        /* Inserta una A intercalada a lo largo de la lista */
         ListaInstrucciones.goToStart();
-        int k = ListaInstrucciones.getSize();
-        for(ListaInstrucciones; ListaInstrucciones.getPos() < k*2; ListaInstrucciones.next())
+        int k = ListaInstrucciones.getSize()*2;
+        for(ListaInstrucciones; ListaInstrucciones.getPos() < k; ListaInstrucciones.next())
         {
             ListaInstrucciones.next();
             ListaInstrucciones.insert(DrawInstructions::A);
         }
     }
 
-    void BuscarInsertar()
+    void BuscarInsertar()//Este metodo crea la lista con las instrucciones
     {
         ListaInstrucciones.goToStart();
         toInsert1 = ListaInstrucciones.getElement();
@@ -63,7 +67,7 @@ public:
         gradosAumentar = 60;
     }
 
-    void GenerarLista(int pIteraciones)
+    void GenerarLista(int pIteraciones)//Este metodo realiza la lista segun las pIteraciones que reciba
     {
         IniciarLista();
         for(int i = 0; i < pIteraciones; i++)

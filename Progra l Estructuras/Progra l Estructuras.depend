@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1411200375 source:c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1411590835 source:c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<winbgim.h>
 	<math.h>
@@ -8,16 +8,17 @@
 	"Constants.h"
 	"LevyCCurve.h"
 	"Sierpinski.h"
+	"Otros.h"
 	"CurvaDelDragon.h"
 	"DoubleLinkedList.h"
 
 1410847150 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\constants.h
 
-1411156974 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+1411590572 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
 	"Constants.h"
 	"Drawing.h"
 
-1411200599 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
+1411590692 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
 	<iostream>
 	"DoubleLinkedList.h"
 	"DNode.h"
@@ -28,20 +29,20 @@
 
 1410923876 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
 
-1411197576 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\sierpinski.h
+1411590572 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\sierpinski.h
 	<iostream>
 	"Constants.h"
 	"Drawing.h"
 
-1411107363 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
+1411590572 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
 	"DoubleLinkedList.h"
 	"DNode.h"
 	"Constants.h"
 	"Drawing.h"
 
-1411107363 D
+1411414956 D
 
-1411423164 source:c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1411752744 source:c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\main.cpp
 	<iostream>
 	<math.h>
 	<time.h>
@@ -54,9 +55,11 @@
 	"CurvaDelDragon.h"
 	"DoubleLinkedList.h"
 
-1411362220 source:d:\tarea-programada-l-fractales\progra l estructuras\main.cpp
+1411748337 source:d:\tarea-programada-l-fractales\progra l estructuras\main.cpp
 
 1411362220 2506ab688dd061cbe4f29d960d509d4e62ae8
+
+1411417638 0e4d6efd5bcd078f2443f6a5aa5f703b27277
 	<iostream>
 	<winbgim.h>
 	<math.h>
@@ -68,14 +71,18 @@
 	"Otros.h"
 	"CurvaDelDragon.h"
 	"DoubleLinkedList.h"
+	<iostream>
+	"Constants.h"
+	"Drawing.h"
+	<math.h>
 
 1410898889 d:\tarea-programada-l-fractales\progra l estructuras\include\constants.h
 
-1411175264 d:\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+1411747572 d:\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
 	"Constants.h"
 	"Drawing.h"
 
-1411361644 d:\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
+1411748429 d:\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
 	<iostream>
 	"DoubleLinkedList.h"
 	"DNode.h"
@@ -86,18 +93,18 @@
 
 1411175264 d:\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
 
-1411361369 d:\tarea-programada-l-fractales\progra l estructuras\include\sierpinski.h
+1411747956 d:\tarea-programada-l-fractales\progra l estructuras\include\sierpinski.h
 	<iostream>
 	"Constants.h"
 	"Drawing.h"
 
-1411362459 d:\tarea-programada-l-fractales\progra l estructuras\include\otros.h
+1411747565 d:\tarea-programada-l-fractales\progra l estructuras\include\otros.h
 	<iostream>
 	"Constants.h"
 	"Drawing.h"
 	<math.h>
 
-1411191623 d:\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
+1411747572 d:\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
 	"DoubleLinkedList.h"
 	"DNode.h"
 	"Constants.h"
@@ -105,11 +112,11 @@
 
 1410881160 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\constants.h
 
-1411146536 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
+1411749301 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\levyccurve.h
 	"Constants.h"
 	"Drawing.h"
 
-1411749132 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
+1411752603 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\drawing.h
 	<iostream>
 	<winbgim.h>
 	"DoubleLinkedList.h"
@@ -121,20 +128,20 @@
 
 1410969443 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\dnode.h
 
-1411417080 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\sierpinski.h
+1411749301 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\sierpinski.h
 	<iostream>
 	"Constants.h"
 	"Drawing.h"
 
 1411417173 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\otros.h
-	<iostream>
-	"Constants.h"
-	"Drawing.h"
-	<math.h>
 
-1411417638 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
+1411414956 c:\users\ariel\documents\github\tarea-programada-l-fractales\progra l estructuras\include\otros.h
+
+1411749301 c:\users\wilberth\proyectos\c++\tarea-programada-l-fractales\progra l estructuras\include\curvadeldragon.h
 	"DoubleLinkedList.h"
 	"DNode.h"
 	"Constants.h"
 	"Drawing.h"
+
+1411417638 "
 

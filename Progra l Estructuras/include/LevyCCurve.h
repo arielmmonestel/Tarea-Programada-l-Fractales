@@ -20,7 +20,7 @@ private:
 
 
 
-    void BuscarInsertar(){
+    void BuscarInsertar(){ //Este metodo crea la lista con las instrucciones
 
         for(ListaInstrucciones.goToStart(); ListaInstrucciones.getPos() < ListaInstrucciones.getSize(); ListaInstrucciones.next()){
 
@@ -55,7 +55,7 @@ public:
 
 
 
-    void GenerarLista(int pIteraciones){
+    void GenerarLista(int pIteraciones){//Este metodo realiza la lista segun las pIteraciones que reciba
         IniciarLista();
 
         for(int i = 0; i < pIteraciones; i++)

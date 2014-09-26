@@ -45,10 +45,9 @@ int ObtenerEntrada(string mensaje, int inicio, int fin)
 
 int mostrarMenu(){//Metodo para  imprimir el menu principal en pantalla con un Switch a cada tipo de lista.
 
-
+    system("cls");
 
     int opcion;
-
 
     cout <<("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ")<< endl;
     cout <<(" Ariel Montero Monestel                        Wilberth Chaves Sandi  ")<< endl;
@@ -76,6 +75,7 @@ int mostrarMenu(){//Metodo para  imprimir el menu principal en pantalla con un S
     cout<< ("                 4. Salir                                ")<< endl;
     cout<<("")<<endl;
     opcion = ObtenerEntrada("opcion: ",1 , 5);
+
 
     return opcion;
 
@@ -119,13 +119,14 @@ int main()
                 curva2.GenerarLista(15);
                 curva2.drawFractal();
                 break;
+
+
             case 5:
                 cout <<" "<<endl;
                 cout<<"Cargando ..."<<endl;
                 curva5.GenerarLista(1);
                 curva5.drawFractal();
                 break;
-
             case 4:
                 salir = true;
                 break;
@@ -134,6 +135,7 @@ int main()
                 cout<<"Error, opcion no valida"<< endl;
                 //break;
         }
+        cout<<salir;
     }
 
     return 0;
