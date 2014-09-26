@@ -46,6 +46,8 @@
 		<Unit filename="include/DoubleLinkedList.h" />
 		<Unit filename="include/Drawing.h" />
 		<Unit filename="include/LevyCCurve.h" />
+		<Unit filename="include/Otros.h" />
+		<Unit filename="include/Sierpinski.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

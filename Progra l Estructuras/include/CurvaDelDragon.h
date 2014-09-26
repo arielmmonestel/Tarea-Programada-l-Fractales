@@ -32,6 +32,7 @@ class CurvaDelDragon: public Drawing{
             ListaInstrucciones.next();
             ListaInstrucciones.next();
             ListaInstrucciones.next();
+
             if(toInsert == DrawInstructions::D){
                 //cout << "cambio D por I" << endl;
                 toInsert = DrawInstructions::I;
@@ -70,28 +71,7 @@ class CurvaDelDragon: public Drawing{
             }
 
         }
-        void getLista(){
 
-        for(ListaInstrucciones.goToStart(); ListaInstrucciones.getPos() < ListaInstrucciones.getSize(); ListaInstrucciones.next()){
-
-            switch(ListaInstrucciones.getElement()){
-
-            case DrawInstructions::A:
-                cout << "A,";
-                break;
-
-            case DrawInstructions::I:
-                cout << "I,";
-                break;
-            case DrawInstructions::D:
-                cout << "D,";
-                break;
-
-            }
-
-
-        }
-    }
 
 };
 

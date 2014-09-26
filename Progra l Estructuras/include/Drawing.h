@@ -1,21 +1,24 @@
 #ifndef DRAWING_H
 #define DRAWING_H
-#define PI 3.14159265358979
 #include <iostream>
+#include <winbgim.h>
 #include  "DoubleLinkedList.h"
 #include "DNode.h"
-#define X_WINDOW 1200
-#define Y_WINDOW 700
+#define PI 3.14159265358979
+#define X_WINDOW 1360
+#define Y_WINDOW 655
 class Drawing {
 
 public:
 
     //Largo de la linea dibujada
-    const int DISTANCIA =15;
+    const int DISTANCIA =5;
     int grados;
     int gradosAumentar;
     int x;
     int y;
+    string windowTitle;
+    DoubleLinkedList<DrawInstructions> ListaInstrucciones;
 
     Drawing()
     {
@@ -24,7 +27,7 @@ public:
         y = 0;
     }
 
-    DoubleLinkedList<DrawInstructions> ListaInstrucciones;
+
 
 
     void drawLine(){
@@ -39,7 +42,7 @@ public:
 
 
         //srand(time(NULL));
-        setlinestyle(SOLID_LINE,6,4);
+        setlinestyle(CENTER_LINE,1,2);
 /*Utilizada para deterrminar el tipo de linea que sera usada por el usuario. Requiere 3 argumentos. El primero es el que define el tipo de linea, soporta: CENTER_LINE, DOTTED_LINE,
 DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el ancho de la linea.*/
 
@@ -55,7 +58,7 @@ DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el 
     void drawFractal(){
 
         initwindow (X_WINDOW,Y_WINDOW);
-        x = X_WINDOW/1.3;
+        x = X_WINDOW/2;
         y = Y_WINDOW/2;
         if(ListaInstrucciones.getSize() == 0){
             cout << "Lista vacia" << endl;
@@ -65,14 +68,15 @@ DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el 
                 switch(ListaInstrucciones.getElement()){
 
                     case DrawInstructions::A:
-                            drawLine();
+                        drawLine();
                         break;
-
                     case DrawInstructions::I:
                         grados -= gradosAumentar;
+                        //drawLine();
                         break;
                     case DrawInstructions::D:
                         grados += gradosAumentar;
+                        //drawLine();
                         break;
 
                     }
@@ -84,7 +88,7 @@ DASHED_LINE, USERBIT_LINE o SOLID_LINE. El segundo es el patron y el tercero el 
 
     }
 
-    void getLista(){
+    void ObtenerLista(){
 
         for(ListaInstrucciones.goToStart(); ListaInstrucciones.getPos() < ListaInstrucciones.getSize(); ListaInstrucciones.next()){
 
